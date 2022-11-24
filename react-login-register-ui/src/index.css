@@ -23,6 +23,12 @@ body, html, .App, #root, .outer {
   box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
 }
 
+.navbar-brand img{
+  width:30px;
+  height:30px;
+  margin-right:10px;
+}
+
 .outer {
   display: flex;
   justify-content: center;
@@ -46,6 +52,15 @@ body, html, .App, #root, .outer {
   background: #ffffff;
   box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
   padding: 40px 55px 45px 55px;
+  border-radius: 15px;
+  transition: all .3s;
+}
+
+.carousel {
+  margin: auto;
+  background: #ffffff;
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+  padding: 30px;
   border-radius: 15px;
   transition: all .3s;
 }
@@ -97,7 +112,6 @@ body, html, .App, #root, .outer {
   text-align: center;
 }
 
-
 .item1 { grid-area: header; }
 .item2 { grid-area: menu; }
 .item3 { grid-area: main; }
@@ -110,10 +124,70 @@ body, html, .App, #root, .outer {
     'main main main main menu '
     'footer footer footer footer menu';
   gap: 10px;
-  padding: 45px 10px;
+  padding: 60px 10px;
 }
 
 .grid-container > div {
   text-align: center;
-  padding: 20px 0;
+  padding: 5px 0;
+}
+
+div.hideImg img[alt] {
+  margin-left: -16px;
+  text-indent: 16px;
+}
+
+.user-state{
+  margin: auto;
+  /* background: linear-gradient(to right,#12c2e9, #4863d8); */
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+  padding: 20px;
+  border-radius: 15px;
+  transition: all .3s;
+  color: white;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+}
+
+.user-streak{
+  margin: auto;
+  background: #ffebc5;
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+  padding: 20px;
+  border-radius: 15px;
+  transition: all .3s;
+  color: rgb(57, 61, 83);
+  width: 100%;
+  height: 100%;
+  text-align: left;
+}
+
+.user-streak img{
+  width:80px;
+  height:80px;
+  float:left;
+  margin-right:18px;
+}
+
+.user-state img{
+  width:100px;
+  height:100px;
+  margin-right:25px;
+  margin-left:25px;
+  float:left
+}
+
+.leadPlace {
+  margin: auto;
+  background: linear-gradient(to right,#ffc446, #f04848);
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+  border-radius: 15px;
+  padding: 15px;
+  transition: all .3s;
+  color: rgb(255, 255, 255);
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-weight: 500;
 }

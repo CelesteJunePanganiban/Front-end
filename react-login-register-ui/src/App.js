@@ -15,22 +15,11 @@ function App() {
         <nav className="navbar navbar-expand-lg navbar-light fixed-top ">
           <div className="container">
             <Link className="navbar-brand" to={"/sign-in"}>
+              <img src="https://cdn-icons-png.flaticon.com/512/2876/2876988.png" />
               Slumbr
             </Link>
           </div>
         </nav>
-
-        {/* <div className="outer">
-          <div className="inner">
-            <Routes>
-              <Route exact path="/" element={<Login />} />
-              
-              <Route path="/sign-up" element={<SignUp />} />
-              <Route path="/sign-in" element={<Login />} />
-              <Route exact path="/" element={<Dashboard />}/>
-            </Routes>
-          </div>
-        </div> */}
 
         <div class="main">
           <Main />

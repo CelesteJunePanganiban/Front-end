@@ -57,7 +57,10 @@ const Leaderboard = () => {
                     <Col>
                         <div>
                             <h2>Leaderboard</h2>
-                            <h3>You are at: 5th place</h3>
+                            <div className="leadPlace">
+                                <p>You are at:</p>
+                                <h4>5th place</h4>
+                            </div>
                         </div>
                     </Col>
                 </Row>
