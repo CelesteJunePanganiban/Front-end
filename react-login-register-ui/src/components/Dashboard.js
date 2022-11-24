@@ -56,21 +56,11 @@ export default class Dashboard extends Component {
     render() {
         const heartRate = 60;
         return (
-            <div class="align-center mt-3" >
-                <Container className="mt-6">
+            <div className="deets">
+                <Container>
                     <Row className="mt-3">
-                        <Col>
-                            <div>
-                                <h3>You are:</h3>
-                                <h2>
-                                    Well Rested
-                                </h2>
-                            </div>
-                        </Col>
-                    </Row>
-                    <Row className="mt-3">
-                        <Col style={{ marginLeft: 25 }}>
-                            <Card style={{ width: '14rem' }}>
+                        <Col style={{ marginLeft: 0 }}>
+                            <Card style={{ width: '12rem' }}>
                                 <Card.Img variant="top" src="https://healthblog.uofmhealth.org/sites/consumer/files/2020-01/heart_beating_0.gif" />
                                 <Card.Body>
                                     <Card.Title>SP02</Card.Title>
@@ -80,37 +70,23 @@ export default class Dashboard extends Component {
                                     <ProgressBar now={heartRate} label={`${heartRate}%`} variant="danger" />
                                 </Card.Body>
                             </Card>
-                            {/* <Card style={{ alignContent: "center" }}>
-                                <Card.Body className="justify-content-center">
-                                    <Card.Title>SP02:</Card.Title>
-                                    <Card.Text style={{ fontSize: 50, fontWeight: "bold", textAlign: "center" }}>
-                                        SP02
-                                    </Card.Text>
-                                </Card.Body>
-                            </Card> */}
+                 
                         </Col>
                         <Col>
-                            <Card style={{ width: '14rem' }}>
+                            <Card style={{ width: '12rem' }}>
                                 <Card.Img variant="top" src="https://healthblog.uofmhealth.org/sites/consumer/files/2020-01/heart_beating_0.gif" />
                                 <Card.Body>
-                                    <Card.Title>Average Heart Rate</Card.Title>
+                                    <Card.Title>Ave Heart Rate</Card.Title>
                                     <Card.Text>
                                         Nagpapalpitate ka na
                                     </Card.Text>
                                     <ProgressBar now={heartRate} label={`${heartRate}%`} variant="success" />
                                 </Card.Body>
                             </Card>
-                            {/* <Card style={{ alignContent: "center" }}>
-                                <Card.Body className="justify-content-center">
-                                    <Card.Title>Average Heart rate:</Card.Title>
-                                    <Card.Text style={{ fontSize: 50, fontWeight: "bold", textAlign: "center" }}>
-                                        heartrate
-                                    </Card.Text>
-                                </Card.Body>
-                            </Card> */}
+               
                         </Col>
                         <Col>
-                            <Card style={{ width: '14rem' }}>
+                            <Card style={{ width: '12rem' }}>
                                 <Card.Img variant="top" src="https://healthblog.uofmhealth.org/sites/consumer/files/2020-01/heart_beating_0.gif" />
                                 <Card.Body>
                                     <Card.Title>Max Heart Rate</Card.Title>
@@ -120,17 +96,10 @@ export default class Dashboard extends Component {
                                     <ProgressBar now={heartRate} label={`${heartRate}%`} />
                                 </Card.Body>
                             </Card>
-                            {/* <Card style={{ alignContent: "center" }}>
-                                <Card.Body className="justify-content-center">
-                                    <Card.Title>Maximum Heart Rate:</Card.Title>
-                                    <Card.Text style={{ fontSize: 50, fontWeight: "bold", textAlign: "center" }}>
-                                        time
-                                    </Card.Text>
-                                </Card.Body>
-                            </Card> */}
+                
                         </Col>
                     </Row>
-                    <Row style={{ marginLeft: 55, marginTop: 20 }}>
+                    <Row style={{ marginLeft: 0, marginTop: 10 }}>
                         <Card style={{ width: "45rem" }}>
                             <Card.Header>Sleep Activity</Card.Header>
                             <ListGroup variant="flush">
@@ -178,8 +147,6 @@ export default class Dashboard extends Component {
                     </Row>
                 </Container>
             </div>
-
-
         );
     }
 
