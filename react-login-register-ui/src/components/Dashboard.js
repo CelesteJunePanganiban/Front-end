@@ -5,6 +5,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import ProgressBar from 'react-bootstrap/ProgressBar';
 import ListGroup from "react-bootstrap/ListGroup";
+import { gql, useQuery } from "@apollo/client";
 
 import {
     AreaChart,
@@ -14,6 +15,18 @@ import {
     CartesianGrid,
     Tooltip
 } from "recharts";
+
+
+
+
+const PROFILE_QUERY = gql`
+query SleepLogs($userId: ID!) {
+  sleepLogs(userId: $userId) {
+    dateOfSleep
+  }
+}
+`
+
 const data = [
     {
         week1: 3,
@@ -52,9 +65,19 @@ const data = [
     }
 ];
 
-export default class Dashboard extends Component {
-    render() {
+export default function Dashboard () {
+
         const heartRate = 60;
+
+        const { clients, loading, data } = useQuery(            
+                PROFILE_QUERY, {
+                    variables: { userId : 1 }
+                }
+              );
+              if (loading) {
+                return <div>Loading</div>
+              }
+              console.log(data)
         return (
             <div class="align-center mt-3" >
                 <Container className="mt-6">
@@ -179,8 +202,6 @@ export default class Dashboard extends Component {
                 </Container>
             </div>
 
-
         );
-    }
 
 }
