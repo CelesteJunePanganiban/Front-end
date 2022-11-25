@@ -30,7 +30,7 @@ const tiredQuotes = [
 ];
 
 const User = () => {
-  const userState = dummyState.at(0).state;
+  const userState = dummyState.at(1).state;
   let quotes = [];
   let imgState, bgState, imgStreak, txtStreak, bgStreak = "";
   const streak = 8;

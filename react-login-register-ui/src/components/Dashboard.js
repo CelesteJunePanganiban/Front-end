@@ -114,6 +114,7 @@ export default class Dashboard extends Component {
                                 </ListGroup>
                             </Card>
                         </Col>
+                        <p>This contains your SPO2, Max Heart Rate, and Average Heart Rate per day :D </p>
                     </Row>
                 </Container>
             </div>
