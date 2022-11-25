@@ -16,12 +16,18 @@ const dummyState = [
 ];
 
 const wellRestedQuotes = [
-  { quotes:"What if dumating ang greatest what f mo, ano gagawin mo. Will you run away? No"},
-  { quotes: "kasi minsan kapag tumitingin sa gilid, kakanan ka sa kaliwa" },
-  { quotes: "shawarma rising" },
+  { quotes:"Being consistent assist in maintaining a good sleep schedule. Going to bed at the same time each night would help."},
+  { quotes: "Being well-rested lowers your risk for serious health problems, like diabetes and heart disease" },
+  { quotes: "Getting enough sleep reduces stress and improves your mood" },
 ];
 
-const tiredQuotes = [{ quotes: "Pinag sasasabe mo pre" }];
+const tiredQuotes = [
+  { quotes: "Before sleeping, make sure your bedroom is quiet, dark, relaxing, and at a comfortable temperature"},
+    {quotes: "Get some exercise. Being physically active during the day can help you fall asleep more easily at night."},
+    {quotes: "Create a comfortable sleep environment — make sure your bedroom is dark and quiet"},
+    {quotes: "Lack of quality sleep are associated with high-blood pressure and heart related problems like heart attacks and strokes"},
+    {quotes: "Sleep disorders can cause many different problems. Keep in mind that it’s normal to have trouble sleeping every now and then. If you are consistently having troubles, you can consult your doctor"}
+];
 
 const User = () => {
   const userState = dummyState.at(0).state;
@@ -38,7 +44,7 @@ const User = () => {
     imgState = "https://cdn-icons-png.flaticon.com/512/3782/3782049.png";
     bgState = "linear-gradient(to right,#e98512, #d84848)";
   } else if (userState === "Exhausted"){
-    quotes = wellRestedQuotes;
+    quotes = tiredQuotes;
     imgState = "https://cdn-icons-png.flaticon.com/512/2766/2766109.png";
     bgState = "linear-gradient(to right,#46504c, #838f8a)";
   }
