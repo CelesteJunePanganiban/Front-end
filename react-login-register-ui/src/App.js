@@ -20,7 +20,7 @@ function App() {
             </Link>
           </div>
         </nav>
-
+        
         <div class="main">
           <Main />
         </div>

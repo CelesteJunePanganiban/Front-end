@@ -12,7 +12,7 @@ const LeaderboardItem = (item) => {
                 <div className="fw-bold">{details.name}</div>
             </div>
             <Badge bg="primary" pill>
-                {details.streak}
+                {details.streak} 
             </Badge>
         </ListGroup.Item>
     )

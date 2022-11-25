@@ -149,7 +149,6 @@ div.hideImg img[alt] {
   height: 100%;
   text-align: left;
 }
-
 .user-streak{
   margin: auto;
   box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
@@ -190,3 +189,9 @@ div.hideImg img[alt] {
   text-align: center;
   font-weight: 500;
 }
+
+.carousel {
+  height: 32rem;
+  position: relative;
+}
+

@@ -1,4 +1,5 @@
 import React from "react";
+import Carouseeel from "./Carouseeel";
 
 import Dashboard from './Dashboard'
 import Leaderboard from "./Leaderboard";
