@@ -117,3 +117,8 @@ body, html, .App, #root, .outer {
   text-align: center;
   padding: 20px 0;
 }
+
+.carousel {
+  height: 32rem;
+  position: relative;
+}

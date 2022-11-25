@@ -24,7 +24,7 @@ function App() {
           <div className="inner">
             <Routes>
               <Route exact path="/" element={<Login />} />
-              
+              <Route path="/main" element={<Main />} />
               <Route path="/sign-up" element={<SignUp />} />
               <Route path="/sign-in" element={<Login />} />
               <Route exact path="/" element={<Dashboard />}/>
