@@ -67,7 +67,7 @@ export default class Dashboard extends Component {
                             <Carouseeel />
                         </Col>
                     </Row>
-                    <Row style={{ margin: 100, marginTop: 10 }}>
+                    <Row style={{ marginTop: 10 }}>
                         <Col>
                             <Card className="mx-auto" style={{ width: "45rem" }}>
                                 <Card.Header>Sleep Activity</Card.Header>

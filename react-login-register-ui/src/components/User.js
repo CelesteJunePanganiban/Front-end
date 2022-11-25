@@ -27,7 +27,7 @@ const User = () => {
   const userState = dummyState.at(0).state;
   let quotes = [];
   let imgState, bgState, imgStreak, txtStreak, bgStreak = "";
-  const streak = 7;
+  const streak = 8;
 
   if (userState === "Well Rested") {
     quotes = wellRestedQuotes;

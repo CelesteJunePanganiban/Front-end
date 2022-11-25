@@ -11,7 +11,7 @@ function Main() {
       <div class="grid-container">
         <div class="item2"><Leaderboard /></div>
         <div class="item3"><User /></div>
-        <div class="item5"><Dashboard/></div>
+        <div class="item5" style={{width:'850px'}}><Dashboard/></div>
       </div>
     </div>
   );

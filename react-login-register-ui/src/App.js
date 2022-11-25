@@ -18,6 +18,10 @@ function App() {
               <img src="https://cdn-icons-png.flaticon.com/512/2876/2876988.png" />
               Slumbr
             </Link>
+
+            <Link className="navbar-brand" to={"/sign-in"} style={{color:'#4863d8'}}>
+              Logout 
+            </Link>
           </div>
         </nav>
         

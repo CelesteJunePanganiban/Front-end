@@ -18,9 +18,9 @@ function Carouseeel() {
                 <Card.Body>
                   <Card.Title>SP02</Card.Title>
                   <Card.Text>
-                    Nagpapalpitate ka na
+                    Healthy Range for a person: 96-99
                   </Card.Text>
-                  <ProgressBar now={heartRate} label={`${heartRate}%`} variant="success" />
+                  <ProgressBar now={heartRate} label={`${heartRate}`} variant="success" />
                 </Card.Body>
               </Card>
             </Col>
@@ -30,9 +30,9 @@ function Carouseeel() {
                 <Card.Body>
                   <Card.Title>Ave Heart Rate</Card.Title>
                   <Card.Text>
-                    Nagpapalpitate ka na
+                    Rate may vary from person to person
                   </Card.Text>
-                  <ProgressBar now={heartRate} label={`${heartRate}%`} variant="success" />
+                  <ProgressBar now={heartRate} label={`${heartRate}bpm`} variant="success" />
                 </Card.Body>
               </Card>
             </Col>
@@ -42,9 +42,9 @@ function Carouseeel() {
                 <Card.Body>
                   <Card.Title>Max Heart Rate</Card.Title>
                   <Card.Text>
-                    Nagpapalpitate ka na
+                    To gauge your exercise intensity
                   </Card.Text>
-                  <ProgressBar now={heartRate} label={`${heartRate}%`} variant="success" />
+                  <ProgressBar now={heartRate} label={`${heartRate}`} variant="success" />
                 </Card.Body>
               </Card>
             </Col>
